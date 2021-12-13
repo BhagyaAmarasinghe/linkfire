@@ -1,0 +1,10 @@
+-- To Run Jar file --
+
+1.Go to target/ folder
+2.Open new cmd
+3.Enter this command (java -jar linkfire-rest-service-0.0.1-SNAPSHOT.jar)
+
+
+-- Sample API request --
+
+http://localhost:8090/linkfire/api/v1/number/is-odd/12
