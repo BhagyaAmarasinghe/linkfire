@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: linkfire-api
+  labels:
+    app: linkfire
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: linkfire
+  template:
+    metadata:
+      labels:
+        app: linkfire
+    spec:
+      containers:
+      - name: l130260001019.dkr.ecr.us-east-1.amazonaws.com/linkfire:v1
+        ports:
+        - containerPort: 80
